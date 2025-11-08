@@ -1,10 +1,10 @@
 package number
 
 import (
-	"github.com/delapaska/EgorExplain/internal/models"
+	"github.com/delapaska/EgorExplain/internal/models/number"
 )
 
-func (r *repository) Add(number models.NumberRequest) error {
+func (r *repository) Add(number number.NumberRequest) error {
 
 	query := `
 	INSERT INTO numbers (number)

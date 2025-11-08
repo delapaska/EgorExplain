@@ -2,7 +2,7 @@ package number
 
 import (
 	"database/sql"
-	"github.com/delapaska/EgorExplain/internal/models"
+	"github.com/delapaska/EgorExplain/internal/models/number"
 )
 
 type repository struct {
@@ -10,7 +10,7 @@ type repository struct {
 }
 
 type Repository interface {
-	Add(record models.NumberRequest) error
+	Add(record number.NumberRequest) error
 }
 
 func New(db *sql.DB) Repository {

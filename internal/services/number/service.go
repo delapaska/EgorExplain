@@ -2,7 +2,7 @@ package number
 
 import (
 	"github.com/delapaska/EgorExplain/internal/database/number"
-	"github.com/delapaska/EgorExplain/internal/models"
+	number2 "github.com/delapaska/EgorExplain/internal/models/number"
 )
 
 type service struct {
@@ -10,7 +10,7 @@ type service struct {
 }
 
 type Service interface {
-	Add(number models.NumberRequest) error
+	Add(number number2.NumberRequest) error
 }
 
 func New(repo number.Repository) Service {
