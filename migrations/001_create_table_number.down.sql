@@ -1,0 +1,1 @@
+DROP TABLE number IF exists
